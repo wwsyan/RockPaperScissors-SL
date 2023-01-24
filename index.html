@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <style>
+        canvas {
+            margin-top: 35px;
+            border: 4px solid #555;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: rgb(238, 238, 238);
+        }
+    </style>
+    <link href="https://cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="ui menu">
+        <div class="item header">Rock Paper Scissors</div>
+        <div class="right menu">
+            <a href="https://github.com/wwsyan/RockPaperScissors-SL" class="ui item">
+            View on GitHub &nbsp
+            <i class="alternate github icon"></i></a>
+        </div>
+    </div>
+
+    <center>
+        <canvas id="canvas" width="200", height="300">Your browser doesn't support the HTML5 element canvas.</canvas>
+        <div>
+            <button class="basic ui button" id="btn_rock" onclick="press_btn_rock()">Rock</button>
+            <button class="basic ui button" id="btn_paper" onclick="press_btn_paper()">Paper</button>
+            <button class="basic ui button" id="btn_scissors" onclick="press_btn_scissors()">Scissors</button>
+        </div>
+    </center>
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+<script src="script.js"></script>
+</html>
