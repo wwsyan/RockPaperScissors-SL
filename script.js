@@ -150,21 +150,6 @@ const gameControl = {
         this.img['Scissors'] = new Image();
         this.img['Scissors'].src = 'image/Scissors.png';
     },
-    loadBtn: function () {
-        this.btn['Rock'] = document.getElementById('btn_rock');
-        this.btn['Paper'] = document.getElementById('btn_paper');
-        this.btn['Scissors'] = document.getElementById('btn_scissors');
-    },
-    disableBtn: function () {
-        this.btn['Rock'].disabled = true;
-        this.btn['Paper'].disabled = true;
-        this.btn['Scissors'].disabled = true;
-    },
-    enableBtn: function () {
-        this.btn['Rock'].disabled = false;
-        this.btn['Paper'].disabled = false;
-        this.btn['Scissors'].disabled = false;
-    },
     play: function (humanAction) {
         let agentAction = this.agent.getAction();
         let data = [this.agent.actionMap[humanAction], this.agent.actionMap[agentAction]];
