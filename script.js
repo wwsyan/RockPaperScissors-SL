@@ -67,7 +67,7 @@ const Agent = {
     memory: Memory,
     model: Model,
     history: {
-        historySize: 50,
+        historySize: 10,
         main: []
     },
     actionMap: {'Rock':[1,0,0], 'Scissors':[0,1,0], 'Paper':[0,0,1]},
